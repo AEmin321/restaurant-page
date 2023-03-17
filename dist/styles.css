@@ -106,20 +106,7 @@ footer {
     color: white;
 }
 
-/* .hero-img:after {
-    content:"";
-    position: absolute;
-    top:100px;right:0;bottom:0;left: 0;
-    z-index:-2;			
-    -webkit-box-shadow:0px 250px 15px -35px rgba(0,0,0,.25);
-    -moz-box-shadow:0px 250px 15px -35px rgba(0,0,0,.25);
-    box-shadow:0px 250px 15px -35px rgba(0,0,0,.25);
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    border-radius:50%;
-    transform:scaleY(.3);
-    -webkit-transform:scaleY(.3);
-    -moz-transform:scaleY(.3);
-    -ms-transform:scaleY(.3);
-    -o-transform:scaleY(.3);
-} */
+/* menu section styles */
+.card>img {
+    width: 80px;
+}

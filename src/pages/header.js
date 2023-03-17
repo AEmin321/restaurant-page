@@ -10,32 +10,18 @@ export default function setHeader () {
 
     const btnsDiv=document.createElement('div');
     btnsDiv.classList.add('btns-wrapper');
-    btnsDiv.appendChild(homeButton());
-    btnsDiv.appendChild(menuButton());
-    btnsDiv.appendChild(aboutButton());
+    btnsDiv.appendChild(createButton('home-btn','Home'));
+    btnsDiv.appendChild(createButton('menu-btn','Menu'));
+    btnsDiv.appendChild(createButton('about-btn','About'));
 
     headerDiv.appendChild(headerTitle);
     headerDiv.appendChild(btnsDiv);
     container.appendChild(headerDiv);
 }
 
-function homeButton () {
-    const createHomeBtn=document.createElement('div');
-    createHomeBtn.classList.add('home-btn');
-    createHomeBtn.textContent='Home';
-    return createHomeBtn;
-}
-
-function menuButton () {
-    const createMenuBtn=document.createElement('div');
-    createMenuBtn.classList.add('menu-btn');
-    createMenuBtn.textContent='Menu';
-    return createMenuBtn;
-}
-
-function aboutButton () {
-    const createAboutBtn=document.createElement('div');
-    createAboutBtn.classList.add('about-btn');
-    createAboutBtn.textContent='About';
-    return createAboutBtn;
+function createButton (className,txtContent) {
+    const createBtn=document.createElement('div');
+    createBtn.classList.add(className);
+    createBtn.textContent=txtContent;
+    return createBtn;
 }
