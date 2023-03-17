@@ -8,5 +8,4 @@ export default function (title,pText) {
     <div class="hero-paragraph">${pText}</div>
     <button class="hero-btn">View Menu >></button></div>
     <div class="hero-wrapper"><img class="hero-img" src="${heroImage}" alt="hero image of foods."/></div>`;
-    // getContent.appendChild(createMainDiv);
 }

@@ -5,17 +5,32 @@ const menuItems=[
     {
         name:"alksjd",
         details:"asdlfkjlk",
-        price:32
+        price:'11$'
     },
     {
         name:"alksdj",
         details:"asdlfkjlk",
-        price:22
+        price:'22$'
     },
     {
         name:"alkj",
         details:"asdlfkjlk",
-        price:23
+        price:'12$'
+    },
+    {
+        name:"alkj",
+        details:"asdlfkjlk",
+        price:'12$'
+    },
+    {
+        name:"alkj",
+        details:"asdlfkjlk",
+        price:'12$'
+    },
+    {
+        name:"alkj",
+        details:"asdlfkjlk",
+        price:'12$'
     }
 ];
 
@@ -27,6 +42,9 @@ export default function populateMenu () {
         const cardTitle=document.createElement('div');
         const cardParagraph=document.createElement('p');
         const cardPrice=document.createElement('div');
+
+        cardTitle.classList.add('card-title');
+        cardPrice.classList.add('card-price');
 
         cardImg.src=itemImage;
         cardTitle.textContent=item.name;

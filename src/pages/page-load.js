@@ -2,6 +2,7 @@ import header from "./header";
 import home from "./home";
 import footer from "./footer";
 import menu from "./menu";
+import about from "./about";
 
 const heroTitle="Welcome to Lorem Restaurant";
 const heroParagraph="Qui omnis molestiae qui harum totam et dolorem atque At error nihil est obcaecati tempore.";
@@ -23,9 +24,24 @@ function handleBtnClick () {
     const menuBtn=document.querySelector('.menu-btn');
     const aboutBtn=document.querySelector('.about-btn');
 
-    homeBtn.addEventListener('click',()=>handleHomeButton(mainDiv))
-    menuBtn.addEventListener('click',()=>handleMenuButton(mainDiv))
-    aboutBtn.addEventListener('click',()=>handleAboutButton())
+    homeBtn.addEventListener('click',()=>{
+        handleHomeButton(mainDiv);
+        homeBtn.classList.add('btn-active');
+        menuBtn.classList.remove('btn-active');
+        aboutBtn.classList.remove('btn-active');
+    })
+    menuBtn.addEventListener('click',()=>{
+        handleMenuButton(mainDiv);
+        homeBtn.classList.remove('btn-active');
+        menuBtn.classList.add('btn-active');
+        aboutBtn.classList.remove('btn-active');
+    })
+    aboutBtn.addEventListener('click',()=>{
+        handleAboutButton(mainDiv);
+        homeBtn.classList.remove('btn-active');
+        menuBtn.classList.remove('btn-active');
+        aboutBtn.classList.add('btn-active');
+    })
 }
 
 function handleHomeButton (mainDiv) {
@@ -39,5 +55,6 @@ function handleMenuButton(mainDiv) {
 }
 
 function handleAboutButton(mainDiv) {
-    console.log ('handling e');
+    mainDiv.innnerHTML='';
+    about();
 }
