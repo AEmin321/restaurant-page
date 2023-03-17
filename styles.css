@@ -16,6 +16,7 @@ body {
     flex-direction: column;
 }
 
+/* header styles */
 .header {
     display: flex;
     justify-content: space-around;
@@ -42,6 +43,11 @@ body {
 
 .btns-wrapper>div {
     cursor: pointer;
+}
+
+.btn-active {
+    border-bottom: 3px solid #03cc89;
+    padding-bottom: 12px;
 }
 
 footer {
@@ -108,5 +114,38 @@ footer {
 
 /* menu section styles */
 .card>img {
-    width: 80px;
+    width: 200px;
+}
+
+.card {
+    border-bottom: 7px solid #03cc89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    margin: 15px 10px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card-price {
+    font-weight: 700;
+}
+
+/* About section styles */
+.about-wrapper {
+    width: 55%;
+    padding: 22px 22px;
+}
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 12px;
 }
