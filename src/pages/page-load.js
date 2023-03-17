@@ -24,6 +24,8 @@ function handleBtnClick () {
     const menuBtn=document.querySelector('.menu-btn');
     const aboutBtn=document.querySelector('.about-btn');
 
+    handleHeroBtn(mainDiv);
+    
     homeBtn.addEventListener('click',()=>{
         handleHomeButton(mainDiv);
         homeBtn.classList.add('btn-active');
@@ -47,6 +49,7 @@ function handleBtnClick () {
 function handleHomeButton (mainDiv) {
     mainDiv.innerHTML='';
     home(heroTitle,heroParagraph);
+    handleHeroBtn(mainDiv);
 }
 
 function handleMenuButton(mainDiv) {
@@ -57,4 +60,19 @@ function handleMenuButton(mainDiv) {
 function handleAboutButton(mainDiv) {
     mainDiv.innnerHTML='';
     about();
+}
+
+function handleHeroBtn (mainDiv) {
+    const heroBtn=document.querySelector('.hero-btn');
+    const homeBtn=document.querySelector('.home-btn');
+    const menuBtn=document.querySelector('.menu-btn');
+    const aboutBtn=document.querySelector('.about-btn');
+
+    heroBtn.addEventListener('click',()=>{
+        // console.log ('log');
+        handleMenuButton(mainDiv);
+        homeBtn.classList.remove('btn-active');
+        menuBtn.classList.add('btn-active');
+        aboutBtn.classList.remove('btn-active');
+    })
 }
