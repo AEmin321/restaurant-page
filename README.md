@@ -1,4 +1,23 @@
-# restaurant-page
+<h1 align="left">Restaurant Page</h1>
+
+<p align="left">Restaurant page using JavaScript,HTML and CSS,webpack. </p>
+
+## Live Preview
+
+- https://aemin321.github.io/restaurant-page/
+
+  
+## Screenshots
+
+![Screenshot_2023-03-18_03-00-35](https://user-images.githubusercontent.com/121065444/226131145-c4b11492-6655-4ef5-aef5-9239e11e4115.png)
+
+
+## Built With
+
+- JavaScript
+- HTML
+- CSS
+-WebPack
 
 
 
