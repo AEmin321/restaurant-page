@@ -1,6 +1,6 @@
 <h1 align="left">Restaurant Page</h1>
 
-<p align="left">Restaurant page using JavaScript,HTML and CSS,webpack. </p>
+<p align="left">Simple restaurant page using JavaScript,HTML and CSS,webpack. </p>
 
 ## Live Preview
 
